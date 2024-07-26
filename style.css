@@ -1,0 +1,118 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #2972c5f9;
+}
+
+/* Flexbox container to center content */
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure full viewport height */
+    background-color: #f0f0f0; /* Optional: Background color for visibility */
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Adjust height of header */
+    background-color: #0f1787; /* Dark purple background color */
+}
+
+/* Title style */
+.title {
+    font-size: 30px; /* Adjust font size */
+    color: white;
+}
+/* Style for each button */
+.Stop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px; /* Adjust width for medium size */
+    height: 120px; /* Adjust height for medium size */
+    background-color: #2972c5f9; /* Purple background color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%; /* Round edges */
+}
+
+.Left {
+    position: absolute;
+    top: 43%;
+    left: calc(50% - 170px); /* Adjust distance from center */
+    width: 100px; /* Adjust width for medium size */
+    height: 100px; /* Adjust height for medium size */
+    background-color: #2972c5f9; /* Purple background color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%; /* Round edges */
+}
+
+.Right {
+    position: absolute;
+    top: 43%;
+    left: calc(50% + 70px); /* Adjust distance from center */
+    width: 100px; /* Adjust width for medium size */
+    height: 100px; /* Adjust height for medium size */
+    background-color:  #2972c5f9; /* Purple background color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%; /* Round edges */
+}
+
+.Back {
+    position: absolute;
+    top: calc(50% + 66px); /* Adjust distance from center */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Adjust width for medium size */
+    height: 100px; /* Adjust height for medium size */
+    background-color: #2972c5f9; /* Purple background color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%; /* Round edges */
+}
+
+.Forward {
+    position: absolute;
+    top: calc(50% - 167px); /* Adjust distance from center */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Adjust width for medium size */
+    height: 100px; /* Adjust height for medium size */
+    background-color: #2972c5f9; /* Purple background color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%; /* Round edges */
+}
+
+/* Ensure the images are responsive */
+img {
+    width: 100%; /* Ensure image fills button */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+}
+
+.corner-text {
+    position: fixed;
+    bottom: 10px;
+    right: 80px; /* Adjust right distance */
+    color: white;
+    font-size: 18px;
+}
